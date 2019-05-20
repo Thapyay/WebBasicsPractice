@@ -1,0 +1,46 @@
+.body{
+    position: relative;
+    width: 1600px;
+    height: 6957px;
+
+    background: #FFFFFF;
+}
+
+#top{
+    position: absolute;
+    left: 3.38%;
+    right: -3.38%;
+    top: -6.01%;
+    bottom: 85.63%;
+
+    background: #FFFFFF;
+    background-image: url(../img/headerBg.png);
+}
+
+.nav{
+    position: absolute;
+    left: 65.19%;
+    right: -0.69%;
+    top: 0.75%;
+    bottom: 98.92%;
+
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+
+.nav-font{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+
+    font-size: 12px;
+    line-height: 23px;
+    /* identical to box height, or 192% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #000000;
+}
