@@ -1,17 +1,22 @@
 .body{
     position: relative;
-    width: 1600px;
-    height: 6957px;
+    min-width: 100%;
+    min-height: 100%;
 
     background: #FFFFFF;
 }
 
 #top{
     position: absolute;
-    left: 3.38%;
-    right: -3.38%;
-    top: -6.01%;
-    bottom: 85.63%;
+    left: 2.56%;
+    right: -2.56%;
+    top: -0.04%;
+    bottom: 85.67%;
+
+    /*width: 1600px;
+    height: 1000px;*/
+    max-width: 100%;
+    max-height: 100%;
 
     background: #FFFFFF;
     background-image: url(../img/headerBg.png);
@@ -43,4 +48,54 @@
     text-transform: uppercase;
 
     color: #000000;
+}
+
+/* title */
+.title{
+    position: absolute;
+left: 11.06%;
+right: 41.5%;
+top: 2.6%;
+bottom: 93.11%;
+}
+
+/* description */
+.description{
+    position: absolute;
+left: 11.44%;
+right: 54.94%;
+top: 9.53%;
+bottom: 86.78%;
+}
+
+/* photo */
+.photo{
+    position: absolute;
+    left: 58.5%;
+    right: 9.06%;
+    top: 3.15%;
+    bottom: 89.39%;
+
+width: 519px;
+height: 519px;
+}
+
+/* Rectangle 1 */
+.rectangle1{
+    position: absolute;
+left: 11.25%;
+right: 75.81%;
+top: 7.81%;
+bottom: 91.25%;
+
+width: 207px;
+height: 66px;
+background: #000000;
+}
+
+@media only screen and (min-width: 961px){
+    .body{
+        width: 1600px;
+        height: 6957px;
+    }
 }
