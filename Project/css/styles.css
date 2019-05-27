@@ -1,33 +1,88 @@
-.body{
-    position: relative;
-    min-width: 100%;
-    min-height: 100%;
-
-    background: #FFFFFF;
+@font-face {
+    font-family: Ubuntu-R;
+    src: url(../font/Ubuntu-R.ttf);
 }
 
-#top{
+html,body{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 6957px;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+}
+
+.bar-default{
+    position: absolute;
+    left: 0%;
+    right: 97.34%;
+    top: 0%;
+    bottom: 0%;
+
+    float: left;
+}
+
+.main{
     position: absolute;
     left: 2.56%;
-    right: -2.56%;
-    top: -0.04%;
-    bottom: 85.67%;
-
-    /*width: 1600px;
-    height: 1000px;*/
-    max-width: 100%;
-    max-height: 100%;
-
-    background: #FFFFFF;
-    background-image: url(../img/headerBg.png);
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
 }
 
-.nav{
+.top{
+    position: absolute;;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 85.7%;
+
+    background: #FFFFFF;
+
+    background-image: url(../img/headerBg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.recruitment{
     position: absolute;
-    left: 65.19%;
-    right: -0.69%;
-    top: 0.75%;
-    bottom: 98.92%;
+    height: 17px;
+    left: 10%;
+    right: 78.62%;
+    top: 25%;
+}
+
+.recruitment-thales{
+    top: 15%;
+    font-family: Helvetica;
+    font-size: 15px;
+    /* or 733% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 5px;
+
+    color: #2CA1F8;
+}
+
+.recruitment-code{
+    font-family: Helvetica;
+    font-size: 15px;
+    line-height: 110px;
+    /* or 733% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 5px;
+
+    color: #FFFFFF;
+}
+
+.navbar-right{
 
     mix-blend-mode: normal;
     opacity: 0.8;
@@ -50,52 +105,693 @@
     color: #000000;
 }
 
-/* title */
-.title{
+.top-grid{
     position: absolute;
-left: 11.06%;
+    top: 7%;
+    bottom: 10%;
+    left: 10%;
+    right: 10%;
+}
+
+.top-gird-bar{
+    position: absolute;
+    margin-left: 0%;
+    width: 5%;
+    border: 3px solid #000000;
+}
+
+.top-title{
+    position: absolute;
+height: 254px;
+left: 0%;
 right: 41.5%;
-top: 2.6%;
-bottom: 93.11%;
+top: 8%;
+
+font-family: Ubuntu;
+font-style: normal;
+font-weight: bold;
+font-size: 78px;
+
+letter-spacing: -0.3px;
+
+color: #000000;
 }
 
-/* description */
-.description{
+.top-sub-title{
     position: absolute;
-left: 11.44%;
-right: 54.94%;
-top: 9.53%;
-bottom: 86.78%;
+    height: 254px;
+    left: 0%;
+    right: 41.5%;
+    top: 18%;
+    
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 80px;
+    /* or 145% */
+    
+    letter-spacing: -0.3px;
+    
+    color: #000000;
 }
 
-/* photo */
-.photo{
+.top-btn-developers{
     position: absolute;
-    left: 58.5%;
-    right: 9.06%;
-    top: 3.15%;
-    bottom: 89.39%;
-
-width: 519px;
-height: 519px;
-}
-
-/* Rectangle 1 */
-.rectangle1{
-    position: absolute;
-left: 11.25%;
-right: 75.81%;
-top: 7.81%;
-bottom: 91.25%;
-
-width: 207px;
-height: 66px;
+left: 0%;
+width: 15%;
+top: 48%;
+bottom: 47%;
 background: #000000;
 }
 
-@media only screen and (min-width: 961px){
-    .body{
-        width: 1600px;
-        height: 6957px;
-    }
+.top-btn-companies{
+    position: absolute;
+left: 45%;
+right: 15%;
+top: 48%;
+bottom: 47%;
+
+background: #000000;
+}
+
+.top-btn-text{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    
+text-align: center;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+.latest-jobs{
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    top: 15%;
+    bottom: 77.28%;
+}
+
+.jumbotron.jumbotron-latest-jobs-title{
+    background-color: #FFFFFF;
+}
+
+.latest-jobs-title{
+    position: relative;
+    height: 70px;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 90px;
+    /* or 180% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #2B3247;
+}
+
+.motivo-job-post{
+    position: relative;
+    height: 14px;
+
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    color: #2B3247;
+
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.row.display-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row.display-flex > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-find-more{
+    position: absolute;
+    float: right;
+    border-radius: 26px;
+
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.btn-find-more-text{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+/* .item.active,
+.item.active + .item,
+.item.active + .item  + .item {
+    width: 23%;
+    display: block;
+    float:left;
+} */
+
+.jobtitle{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    /* identical to box height */
+
+    color: #2B3247;
+}
+
+.salary{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* or 125% */
+
+    color: #000000;
+
+    mix-blend-mode: normal;
+    opacity: 0.6;
+}
+
+.job-description{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+
+    color: #000000;
+
+    mix-blend-mode: normal;
+    opacity: 0.6;
+}
+
+.btn.btn-default.btn-job-language{
+    background: #2CA1F8;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    border-radius: 11px;
+}
+
+.job-language-text{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 22px;
+    /* identical to box height, or 183% */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.jobtitle-hr{
+    mix-blend-mode: normal;
+    opacity: 0.05;
+    border: 1px solid #000000;
+}
+
+.job-contact-info{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 22px;
+    /* identical to box height, or 183% */
+
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+
+    mix-blend-mode: normal;
+    opacity: 0.3;
+}
+
+.latest-job-hr{
+    mix-blend-mode: normal;
+opacity: 0.4;
+border: 1px solid #979797;
+}
+
+.about-us{
+    position: absolute;
+    left: 5%;
+right: 5%;
+top: 23.52%;
+bottom: 67.79%;
+}
+
+.about-us-top-hr{
+    margin: 0;
+    width: 3%;
+    border: 2px solid #000000;
+    float: left;
+}
+
+.about-us-title{
+    position: absolute;
+height: 227.39px;
+left: 0%;
+right: 45.69%;
+top: 0.5%;
+
+font-family: Ubuntu;
+font-style: normal;
+font-weight: bold;
+font-size: 50px;
+line-height: 66px;
+/* or 132% */
+
+display: flex;
+align-items: center;
+
+color: #000000;
+}
+
+.about-us-description{
+    position: absolute;
+left: 0%;
+right: 51.51%;
+top: 35%;
+bottom: 69.08%;
+
+font-family: Ubuntu;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 22px;
+/* or 157% */
+
+
+color: #000000;
+
+mix-blend-mode: normal;
+opacity: 0.6;
+}
+
+.about-us-logo{
+    position: absolute;
+right: 0%;
+top: 5%;
+}
+
+.about-us-btn{
+    position: absolute;
+left: 0%;
+bottom: 0%;
+
+mix-blend-mode: normal;
+opacity: 0.3;
+border: 2px solid #000000;
+box-sizing: border-box;
+border-radius: 26px;
+}
+
+.about-us-btn-text{
+    font-family: Ubuntu;
+font-style: normal;
+font-weight: bold;
+font-size: 13px;
+line-height: 25px;
+/* or 523% */
+
+text-align: center;
+text-transform: uppercase;
+
+color: #000000;
+}
+
+.why-thalescode{
+    position: absolute;
+left: 0%;
+right: 0%;
+top: 32.21%;
+bottom: 55.14%;
+}
+
+.why-thalescode-top-hr{
+    position: absolute;
+width: 95%;
+margin-left: 2.5%;
+mix-blend-mode: normal;
+opacity: 0.4;
+border: 1px solid #979797;
+}
+
+.why-thalescode-title1{
+    position: absolute;
+height: 70px;
+left: 28.75%;
+right: 23.31%;
+top: 10%;
+}
+
+.why-thalescode-title2{
+    position: absolute;
+height: 14px;
+left: 42.75%;
+right: 42.75%;
+top: 18%;
+}
+
+.why-thalescode-title3{
+    position: absolute;
+left: 33.5%;
+right: 33.5%;
+top: 23%;
+bottom: 72%;
+}
+
+.why-thalescode-title3-employers{
+    float: left;
+    font-family: Ubuntu;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+
+text-transform: uppercase;
+
+color: #000000;
+}
+
+.why-thalescode-title3-candidates{
+    float: right;
+    font-family: Ubuntu;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+
+text-transform: uppercase;
+
+color: #8C93AA;
+
+mix-blend-mode: normal;
+opacity: 0.2;
+}
+
+.why-thalescode-title-hr{
+    position: absolute;
+    top: 30%;
+    width: 4%;
+    margin-left: 48%;
+border: 1px solid #000000;
+}
+
+.why-thalescode-row{
+    position: absolute;
+    top: 35%;
+    bottom: 15%;
+    left: 5%;
+    right: 5%;
+}
+
+/* .why-thalescode-grid{
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+} */
+
+.why-thalescode-grid1{
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+}
+
+.why-thalescode-well-number{
+    position: absolute;
+    margin-top: 10%;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+}
+
+.why-thalescode-well-hr{
+    position: absolute;
+    margin-top: 25%;
+    border: 1px solid #000000;
+    width: 13%;
+    float: left;
+    mix-blend-mode: normal;
+    opacity: 0.2;
+}
+
+.why-thalescode-well-title{
+    position: absolute;
+    margin-top: 30%;
+    font-family: Ubuntu;
+    text-align: left;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    /* identical to box height */
+
+    text-transform: capitalize;
+}
+
+.why-thalescode-well-description{
+    position: absolute;
+    margin-top: 40%;
+    margin-bottom: 0%;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #000000;
+
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.why-thalescode-btn{
+    position: absolute;
+    top: 90%;
+    bottom: 5%;
+    left: 5%;
+    right: 5%;
+}
+
+.why-thalescode-bottom-hr{
+    position: absolute;
+    bottom: 0%;
+    width: 95%;
+    margin-left: 2.5%;
+    mix-blend-mode: normal;
+    opacity: 0.4;
+    border: 1px solid #979797;
+}
+
+.contact{
+    position: absolute;
+    top: 44.86%;
+    bottom: 30%;
+    left: 10%;
+    right: 10%;
+}
+
+.contact-title{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.contact-sub-title{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.contact-hr{
+    float: left;
+    width: 15%;
+    border: 2px solid #232426;
+}
+
+.contact-address{
+    padding-top: 15%;
+    font-family: SanFranciscoDisplay;
+    font-size: 26px;
+
+    color: #313541;
+}
+
+.contact-contact{
+    padding-top: 20%;
+    font-family: SanFranciscoDisplay;
+    font-size: 26px;
+
+    color: #313541;
+}
+
+.contact-tel{
+    padding-top: 2%;
+    font-family: SanFranciscoDisplay;
+    font-size: 26px;
+
+    color: #313541;
+}
+
+.input-info{
+    margin-top: 3%;
+}
+
+.input-info-font{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    color: #000000;
+
+    mix-blend-mode: normal;
+    opacity: 0.2;
+}
+
+.input-info-btn{
+    background-color: #2B3247;
+    width: 100%;
+}
+
+.input-info-btn-text{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.map{
+    position: absolute;
+    top: 70%;
+    bottom: 21.22%;
+    left: 5%;
+    right: 5%;
+
+    background-image: url(../img/Map.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.page-footer{
+    position: absolute;
+    left: 10.38%;
+    right: 9.54%;
+    top: 94.01%;
+    bottom: 1.57%;
+}
+
+.page-footer-hr{
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    mix-blend-mode: normal;
+    opacity: 0.2;
+    border: 1px solid #979797;
+}
+
+.page-footer-title{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.84px;
+
+    color: #000000;
+}
+
+.page-footer-list{
+    padding: 0;
+    list-style-type: none;
+}
+
+.page-footer-list-text{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 29px;
+    /* or 242% */
+
+    letter-spacing: 1px;
+
+    color: #000000;
+}
+
+.subscribe-font{
+    mix-blend-mode: normal;
+    opacity: 0.2;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #000000;
+
+    mix-blend-mode: normal;
+    opacity: 0.4;
+}
+
+.copyright-text{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #000000;
 }
