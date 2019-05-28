@@ -37,7 +37,7 @@ body {
 
 .top {
     position: absolute;
-    ;
+
     left: 0%;
     right: 0%;
     top: 0%;
@@ -116,53 +116,59 @@ body {
 }
 
 .top-gird-bar {
-    margin-top: 5%;
     margin-left: 0%;
     width: 5%;
     border: 3px solid #000000;
 }
 
 .top-title {
-    padding-top: 5%;
-    padding-left: 0%;
+    left: 0%;
+    right: 41.5%;
+    top: 8%;
 
     font-family: Ubuntu;
     font-style: normal;
     font-weight: bold;
     font-size: 78px;
-    display: flex;
+
     letter-spacing: -0.3px;
 
     color: #000000;
 }
 
 .top-sub-title {
-    padding-left: 0%;
-    padding-top: 0%;
+    left: 0%;
+    right: 41.5%;
+    top: 18%;
 
     font-family: Ubuntu;
     font-style: normal;
     font-weight: bold;
     font-size: 55px;
+    line-height: 80px;
+    /* or 145% */
 
     letter-spacing: -0.3px;
 
     color: #000000;
 }
 
+.top-btn {
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+    background: #000000;
+}
+
 .top-btn-developers {
-    width: 15%;
-    left: 0%;
-    top: 48%;
-    bottom: 47%;
+    width: 25%;
+    float: left;
     background: #000000;
 }
 
 .top-btn-companies {
-    width: 15%;
-    left: 45%;
-    top: 48%;
-    bottom: 47%;
+    width: 25%;
+    float: right;
     background: #000000;
 }
 
@@ -181,19 +187,17 @@ body {
 }
 
 .top-description {
-    margin-left: 0%;
-    margin-top: 20%;
+    margin-top: 30%;
+    margin-bottom: 5%;
+    margin-right: 15%;
     background-color: #FFFFFF;
-    mix-blend-mode: normal;
-    opacity: 0.9;
 }
 
 .top-description-text {
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 10%;
-    padding-bottom: 10%;
-
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-left: 15%;
+    padding-right: 15%;
     font-family: Ubuntu;
     font-style: normal;
     font-weight: 500;
@@ -210,8 +214,7 @@ body {
 }
 
 .top-logo {
-    margin-left: 5%;
-    margin-top: 20%;
+    margin-top: 15%;
     border-radius: 50%;
 }
 
@@ -223,103 +226,9 @@ body {
     bottom: 77.28%;
 }
 
-.jumbotron.jumbotron-latest-jobs-title {
-    background-color: #FFFFFF;
-}
-
-.latest-jobs-carousel{
-    padding-top: 7%;
-}
-
-.carousel-control { 
-    width: 8%;
-    width: 0px;
-}
-
-.carousel-control.left,
-.carousel-control.right { 
-    margin-right: 40px;
-    margin-left: 32px; 
-    background-image: none;
-    opacity: 1;
-}
-
-.carousel-control > a > span {
-    color: white;
-	  font-size: 29px !important;
-}
-
-.carousel-col { 
-    position: relative; 
-    min-height: 1px; 
-    height: 85%;
-    padding: 5px; 
-    float: left;
- }
-
- .active > div { display:none; }
- .active > div:first-child { display:block; }
-
-/*xs*/
-/* @media (max-width: 767px) {
-  .carousel-inner .active.left { left: -50%; }
-  .carousel-inner .active.right { left: 50%; }
-	.carousel-inner .next        { left:  50%; }
-	.carousel-inner .prev		     { left: -50%; }
-  .carousel-col                { width: 50%; }
-	.active > div:first-child + div { display:block; }
-} */
-
-/*sm*/
-@media (min-width: 768px) and (max-width: 991px) {
-  .carousel-inner .active.left { left: -50%; }
-  .carousel-inner .active.right { left: 50%; }
-	.carousel-inner .next        { left:  50%; }
-	.carousel-inner .prev		     { left: -50%; }
-  .carousel-col                { width: 50%; }
-	.active > div:first-child + div { display:block; }
-}
-
-/*md*/
-@media (min-width: 992px) and (max-width: 1199px) {
-  .carousel-inner .active.left { left: -33%; }
-  .carousel-inner .active.right { left: 33%; }
-	.carousel-inner .next        { left:  33%; }
-	.carousel-inner .prev		     { left: -33%; }
-  .carousel-col                { width: 33%; }
-	.active > div:first-child + div { display:block; }
-  .active > div:first-child + div + div { display:block; }
-}
-
-/*lg*/
-@media (min-width: 1200px) {
-  .carousel-inner .active.left { left: -25%; }
-  .carousel-inner .active.right{ left:  25%; }
-	.carousel-inner .next        { left:  25%; }
-	.carousel-inner .prev		     { left: -25%; }
-  .carousel-col                { width: 25%; }
-	.active > div:first-child + div { display:block; }
-  .active > div:first-child + div + div { display:block; }
-	.active > div:first-child + div + div + div { display:block; }
-}
-
-.block {
-	width: 306px;
-	height: 230px;
-}
-
-
-
-.red {background: red;}
-
-.blue {background: blue;}
-
-.green {background: green;}
-
-.yellow {background: yellow;}
-
 .latest-jobs-title {
-    position: relative;
+    float: left;
+    padding-bottom: 5%;
     height: 70px;
     font-family: Ubuntu;
     font-style: normal;
@@ -328,13 +237,11 @@ body {
     line-height: 90px;
     /* or 180% */
     display: flex;
-    align-items: center;
-    text-align: center;
     color: #2B3247;
 }
 
 .motivo-job-post {
-    position: relative;
+    float: left;
     height: 14px;
 
     font-family: Ubuntu;
@@ -352,23 +259,14 @@ body {
     opacity: 0.5;
 }
 
-.row.display-flex {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.row.display-flex>[class*='col-'] {
-    display: flex;
-    flex-direction: column;
-}
-
 .btn-find-more {
-    position: absolute;
     float: right;
-    border-radius: 26px;
 
     mix-blend-mode: normal;
-    opacity: 0.5;
+    opacity: 0.3;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 26px;
 }
 
 .btn-find-more-text {
@@ -383,6 +281,11 @@ body {
     color: #000000;
 }
 
+.latest-jobs-carousel {
+    padding-top: 4%;
+    padding-bottom: 8%;
+}
+
 /* .item.active,
 .item.active + .item,
 .item.active + .item  + .item {
@@ -391,7 +294,177 @@ body {
     float:left;
 } */
 
+/* .carousel-control {
+    width: 8%;
+    width: 0px;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+    margin-right: 40px;
+    margin-left: 32px;
+    background-image: none;
+    opacity: 1;
+}
+
+.carousel-control>a>span {
+    color: white;
+    font-size: 29px !important;
+} */
+
+.carousel-col {
+    position: relative;
+    min-height: 1px;
+    padding: 5px;
+    float: left;
+}
+
+ol.carousel-indicators {
+    position: relative;
+    top: 10%;
+    bottom: 5px;
+    margin: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+}
+
+ol.carousel-indicators li,
+ol.carousel-indicators li.active {
+    width: 5px;
+    height: 5px;
+    margin: 0;
+    border-radius: 50%;
+    border: 0;
+    background: transparent;
+}
+
+ol.carousel-indicators li {
+    /* background: rgba(255,255,255,0.39); */
+    background: #000000;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    opacity: 0.4;
+}
+
+ol.carousel-indicators li.active {
+    background: #000000;
+    opacity: 1;
+}
+
+.active>div {
+    display: none;
+}
+
+.active>div:first-child {
+    display: block;
+}
+
+/*xs*/
+/* @media (max-width: 767px) {
+  .carousel-inner .active.left { left: -50%; }
+  .carousel-inner .active.right { left: 50%; }
+	.carousel-inner .next        { left:  50%; }
+	.carousel-inner .prev		     { left: -50%; }
+  .carousel-col                { width: 50%; }
+	.active > div:first-child + div { display:block; }
+} */
+
+/*sm*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .carousel-inner .active.left {
+        left: -50%;
+    }
+
+    .carousel-inner .active.right {
+        left: 50%;
+    }
+
+    .carousel-inner .next {
+        left: 50%;
+    }
+
+    .carousel-inner .prev {
+        left: -50%;
+    }
+
+    .carousel-col {
+        width: 50%;
+    }
+
+    .active>div:first-child+div {
+        display: block;
+    }
+}
+
+/*md*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    .carousel-inner .active.left {
+        left: -25%;
+    }
+
+    .carousel-inner .active.right {
+        left: 25%;
+    }
+
+    .carousel-inner .next {
+        left: 25%;
+    }
+
+    .carousel-inner .prev {
+        left: -25%;
+    }
+
+    .carousel-col {
+        width: 2%;
+    }
+
+    .active>div:first-child+div {
+        display: block;
+    }
+
+    .active>div:first-child+div+div {
+        display: block;
+    }
+}
+
+/*lg*/
+@media (min-width: 1200px) {
+    .carousel-inner .active.left {
+        left: -25%;
+    }
+
+    .carousel-inner .active.right {
+        left: 25%;
+    }
+
+    .carousel-inner .next {
+        left: 25%;
+    }
+
+    .carousel-inner .prev {
+        left: -25%;
+    }
+
+    .carousel-col {
+        width: 25%;
+    }
+
+    .active>div:first-child+div {
+        display: block;
+    }
+
+    .active>div:first-child+div+div {
+        display: block;
+    }
+
+    .active>div:first-child+div+div+div {
+        display: block;
+    }
+}
+
 .jobtitle {
+    padding-top: 2%;
     font-family: Ubuntu;
     font-style: normal;
     font-weight: bold;
@@ -403,7 +476,7 @@ body {
 }
 
 .salary {
-    padding-top: 3%;
+    padding-top: 1%;
     font-family: Ubuntu;
     font-style: normal;
     font-weight: 500;
@@ -418,7 +491,7 @@ body {
 }
 
 .job-description {
-    padding-top: 7%;
+    padding-top: 5%;
     font-family: Ubuntu;
     font-style: normal;
     font-weight: 300;
@@ -461,7 +534,6 @@ body {
 }
 
 .job-contact-info {
-    padding-bottom: 5%;
     font-family: Ubuntu;
     font-style: normal;
     font-weight: normal;
@@ -579,6 +651,43 @@ body {
     bottom: 55.14%;
 }
 
+.why-thalescode-triangle1{
+    position: absolute;
+    left: -25.94%;
+    right: 81.97%;
+    top: 35.02%;
+    bottom: 51.84%;
+    
+    background: #8296AF;
+    mix-blend-mode: normal;
+    opacity: 0.1;
+    transform: rotate(-45deg);
+}
+
+.why-thalescode-triangle2{
+left: 73.69%;
+right: -6.35%;
+top: 37.11%;
+bottom: 55.38%;
+
+background: #8296AF;
+mix-blend-mode: normal;
+opacity: 0.1;
+transform: rotate(-6deg);
+}
+
+.why-thalescode-triangle3{
+    left: 102.17%;
+    right: -42.05%;
+    top: 34.07%;
+    bottom: 56.76%;
+    
+    background: #8296AF;
+    mix-blend-mode: normal;
+    opacity: 0.1;
+    transform: rotate(55deg);
+}
+
 .why-thalescode-top-hr {
     position: absolute;
     width: 95%;
@@ -672,17 +781,15 @@ body {
 }
 
 .why-thalescode-well-number {
-    position: absolute;
-    margin-top: 10%;
     font-family: Ubuntu;
     font-style: normal;
     font-weight: bold;
     font-size: 38px;
+    color: #2CA1F8;
 }
 
 .why-thalescode-well-hr {
-    position: absolute;
-    margin-top: 25%;
+    margin-top: 5%;
     border: 1px solid #000000;
     width: 13%;
     float: left;
@@ -691,8 +798,7 @@ body {
 }
 
 .why-thalescode-well-title {
-    position: absolute;
-    margin-top: 30%;
+    margin-top: 20%;
     font-family: Ubuntu;
     text-align: left;
     font-style: normal;
@@ -705,8 +811,7 @@ body {
 }
 
 .why-thalescode-well-description {
-    position: absolute;
-    margin-top: 40%;
+    margin-top: 20%;
     margin-bottom: 0%;
     font-family: Ubuntu;
     font-style: normal;
@@ -721,7 +826,6 @@ body {
 }
 
 .why-thalescode-btn {
-    position: absolute;
     top: 90%;
     bottom: 5%;
     left: 5%;
@@ -738,12 +842,30 @@ body {
     border: 1px solid #979797;
 }
 
+.thalesblog {
+    position: absolute;
+    top: 45.2%;
+    bottom: 25.5%;
+    left: 7%;
+    right: 7%;
+    background-color: blue;
+}
+
 .contact {
     position: absolute;
-    top: 44.86%;
-    bottom: 30%;
+    top: 75%;
+    bottom: 17%;
     left: 10%;
     right: 10%;
+}
+
+.contact-top-hr {
+    margin-top: 0%;
+    margin-bottom: 5%;
+    width: 100%;
+    mix-blend-mode: normal;
+    opacity: 0.4;
+    border: 1px solid #979797;
 }
 
 .contact-title {
@@ -780,7 +902,7 @@ body {
 }
 
 .contact-contact {
-    padding-top: 20%;
+    padding-top: 15%;
     font-family: SanFranciscoDisplay;
     font-size: 26px;
 
@@ -810,17 +932,7 @@ body {
     color: #000000;
 
     mix-blend-mode: normal;
-    opacity: 0.8;
-}
-
-.validation-result {
-    padding-top: 2%;
-    font-family: Ubuntu;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    color: red;
-    line-height: 16px;
+    opacity: 0.7;
 }
 
 .input-info-btn {
@@ -841,8 +953,8 @@ body {
 
 .map {
     position: absolute;
-    top: 70%;
-    bottom: 21.22%;
+    top: 84.45%;
+    bottom: 6.6%;
     left: 5%;
     right: 5%;
 
