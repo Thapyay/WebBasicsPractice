@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
- 
-  <link rel="stylesheet" href="./css/styles.css">
-  <script src="./js/script.js"></script>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/script.js"></script>
 </head>
+
 <body>
     <div class="container">
         <div class="bar-default">
@@ -35,135 +37,223 @@
                 </nav>
 
                 <div class="row top-grid">
-                    <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="col-lg-7 col-md-7 col-sm-6">
                         <hr class="top-gird-bar">
                         <div class="top-title">ThalesCode</div>
-                        <!-- <div class="top-sub-title">The best way to learn how to programing online</div> -->
-                        <!-- <button type="button" class="btn top-btn-developers top-btn-text">DEVELOPERS</button> -->
-                        <!-- <button type="button" class="btn top-btn-companies top-btn-text">COMPANIES</button> -->
+                        <div class="top-sub-title">The best way to learn how to programing online</div>
+                        <button type="button" class="btn top-btn-developers top-btn-text">DEVELOPERS</button>
+                        <button type="button" class="btn top-btn-companies top-btn-text">COMPANIES</button>
+                        <div class="top-description">
+                            <p class="top-description-text">With ThalesCode you will learn new technologies base on
+                                continues development with a
+                                flexible schedule, where you can focus and participate with others online, to find more
+                                come and join us.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-6">
+                        <img src="./img/top-logo.jpg" class="img-responsive top-logo">
                     </div>
                 </div>
             </div>
 
             <div class="latest-jobs">
                 <!-- <div class="jumbotron jumbotron-latest-jobs-title"> -->
-                    <div class="row display-flex">
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                            <div class="latest-jobs-title">Latest Jobs</div>
-                            <div class="motivo-job-post">MOTIVO JOB POSTS</div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                            <div>
-                                <button type="button" class="btn btn-default btn-find-more"><span class="btn-find-more-text">FIND MORE</span></button>
-                            </div>
-                        </div>
+                <div class="row display-flex">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <div class="latest-jobs-title">Latest Jobs</div>
+                        <div class="motivo-job-post">MOTIVO JOB POSTS</div>
                     </div>
-                <!-- </div> -->
-
-                <div id="myCarousel" class="carousel slide carousel-multi-item" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                        <li data-target="#myCarousel" data-slide-to="3"></li>
-                        <li data-target="#myCarousel" data-slide-to="4"></li>
-                    </ol>
-                
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner"  role="listbox">
-                
-                        <div class="carousel-item active">
-                            <div class="col-lg-3 col-md-3 col-sm-3">
-                                <span class="glyphicon glyphicon-minus"></span>
-                                <div class="jobtitle">FullStack Developer</div>
-                                <div class="salary">6.000.000 &nbsp; - &nbsp; 8.000.000</div>
-                                <div class="job-description">The candidate in this position will work as Principal Software Developer with strong… technical…</div>
-                                <button type="button" class="btn btn-default btn-job-language mr-10"><span class="job-language-text">PHP</span></button>
-                                <button type="button" class="btn btn-default btn-job-language mr-10"><span class="job-language-text">Laravel</span></button>
-                                <button type="button" class="btn btn-default btn-job-language mr-10"><span class="job-language-text">AWS</span></button>
-                                <hr class="jobtitle-hr">
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                                        <!-- <span class="job-contact-info " -->
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <div>
+                            <button type="button" class="btn btn-default btn-find-more"><span
+                                    class="btn-find-more-text">FIND MORE</span></button>
                         </div>
-                
-                        <div class="carousel-item">
-                            <div class="col-lg-3 col-md-3 col-sm-3">
-                                <span class="glyphicon glyphicon-minus"></span>
-                                <div class="jobtitle">FullStack Developer</div>
-                                <div class="salary">6.000.000 &nbsp; - &nbsp; 8.000.000</div>
-                                <div class="job-description">The candidate in this position will work as Principal Software Developer with strong… technical…</div>
-                                <button type="button" class="btn btn-default btn-job-language mr-10"><span class="job-language-text">PHP</span></button>
-                                <button type="button" class="btn btn-default btn-job-language mr-10"><span class="job-language-text">Laravel</span></button>
-                                <button type="button" class="btn btn-default btn-job-language mr-10"><span class="job-language-text">AWS</span></button>
-                                <hr class="jobtitle-hr">
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                                        <!-- <span class="job-contact-info " -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                
-                        <div class="carousel-item">
-                            <div class="col-lg-3 col-md-3 col-sm-3">
-                                <span class="glyphicon glyphicon-minus"></span>
-                                <div class="jobtitle">FullStack Developer</div>
-                                <div class="salary">6.000.000 &nbsp; - &nbsp; 8.000.000</div>
-                                <div class="job-description">The candidate in this position will work as Principal Software Developer with strong… technical…</div>
-                                <button type="button" class="btn btn-default btn-job-language mr-10"><span class="job-language-text">PHP</span></button>
-                                <button type="button" class="btn btn-default btn-job-language mr-10"><span class="job-language-text">Laravel</span></button>
-                                <button type="button" class="btn btn-default btn-job-language mr-10"><span class="job-language-text">AWS</span></button>
-                                <hr class="jobtitle-hr">
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                                        <!-- <span class="job-contact-info " -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                
-                        <div class="carousel-item">
-                            <div class="col-lg-3 col-md-3 col-sm-3">
-                                <span class="glyphicon glyphicon-minus"></span>
-                                <div class="jobtitle">FullStack Developer</div>
-                                <div class="salary">6.000.000 &nbsp; - &nbsp; 8.000.000</div>
-                                <div class="job-description">The candidate in this position will work as Principal Software Developer with strong… technical…</div>
-                                <button type="button" class="btn btn-default btn-job-language mr-10"><span class="job-language-text">PHP</span></button>
-                                <button type="button" class="btn btn-default btn-job-language mr-10"><span class="job-language-text">Laravel</span></button>
-                                <button type="button" class="btn btn-default btn-job-language mr-10"><span class="job-language-text">AWS</span></button>
-                                <hr class="jobtitle-hr">
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                                        <!-- <span class="job-contact-info " -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Need to add one more carousel item -->
                     </div>
                 </div>
+                <!-- </div> -->
 
-                <hr class="latest-job-hr mr-10">
+                <div class="row latest-jobs-carousel">
+                    <div class="col-lg-12 col-md-12">
+                        <div id="carousel" class="carousel slide" data-ride="carousel" data-type="multi"
+                            data-interval="false">
+
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel" data-slide-to="1"></li>
+                                <li data-target="#carousel" data-slide-to="2"></li>
+                                <li data-target="#carousel" data-slide-to="3"></li>
+                                <li data-target="#carousel" data-slide-to="4"></li>
+                            </ol>
+
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="carousel-col">
+                                        <span class="glyphicon glyphicon-minus"></span>
+                                        <div class="jobtitle">FullStack Developer</div>
+                                        <div class="salary">6.000.000 &nbsp; - &nbsp; 8.000.000万円</div>
+                                        <div class="job-description">The candidate in this position will work as
+                                            Principal
+                                            Software Developer with strong… technical…</div>
+                                        <button type="button" class="btn btn-default btn-job-language mr-10"><span
+                                                class="job-language-text">PHP</span></button>
+                                        <button type="button" class="btn btn-default btn-job-language mr-10"><span
+                                                class="job-language-text">Laravel</span></button>
+                                        <button type="button" class="btn btn-default btn-job-language mr-10"><span
+                                                class="job-language-text">AWS</span></button>
+                                        <hr class="jobtitle-hr">
+                                        <span class="job-contact-info">
+                                            <span class="glyphicon glyphicon-home"></span>
+                                            Motivo inc.
+                                            <span class="glyphicon glyphicon-map-marker"></span>
+                                            Shibuya, Tokyo
+                                            <span class="glyphicon glyphicon-time"></span>
+                                            ~10/31
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="carousel-col">
+                                        <span class="glyphicon glyphicon-minus"></span>
+                                        <div class="jobtitle">FullStack Developer</div>
+                                        <div class="salary">6.000.000 &nbsp; - &nbsp; 8.000.000万円</div>
+                                        <div class="job-description">The candidate in this position will work as
+                                            Principal
+                                            Software Developer with strong… technical…</div>
+                                        <button type="button" class="btn btn-default btn-job-language mr-10"><span
+                                                class="job-language-text">PHP</span></button>
+                                        <button type="button" class="btn btn-default btn-job-language mr-10"><span
+                                                class="job-language-text">Laravel</span></button>
+                                        <button type="button" class="btn btn-default btn-job-language mr-10"><span
+                                                class="job-language-text">AWS</span></button>
+                                        <hr class="jobtitle-hr">
+                                        <span class="job-contact-info">
+                                            <span class="glyphicon glyphicon-home"></span>
+                                            Motivo inc.
+                                            <span class="glyphicon glyphicon-map-marker"></span>
+                                            Shibuya, Tokyo
+                                            <span class="glyphicon glyphicon-time"></span>
+                                            ~10/31
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="carousel-col">
+                                        <span class="glyphicon glyphicon-minus"></span>
+                                        <div class="jobtitle">FullStack Developer</div>
+                                        <div class="salary">6.000.000 &nbsp; - &nbsp; 8.000.000万円</div>
+                                        <div class="job-description">The candidate in this position will work as
+                                            Principal
+                                            Software Developer with strong… technical…</div>
+                                        <button type="button" class="btn btn-default btn-job-language mr-10"><span
+                                                class="job-language-text">PHP</span></button>
+                                        <button type="button" class="btn btn-default btn-job-language mr-10"><span
+                                                class="job-language-text">Laravel</span></button>
+                                        <button type="button" class="btn btn-default btn-job-language mr-10"><span
+                                                class="job-language-text">AWS</span></button>
+                                        <hr class="jobtitle-hr">
+                                        <span class="job-contact-info">
+                                            <span class="glyphicon glyphicon-home"></span>
+                                            Motivo inc.
+                                            <span class="glyphicon glyphicon-map-marker"></span>
+                                            Shibuya, Tokyo
+                                            <span class="glyphicon glyphicon-time"></span>
+                                            ~10/31
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="carousel-col">
+                                        <span class="glyphicon glyphicon-minus"></span>
+                                        <div class="jobtitle">FullStack Developer</div>
+                                        <div class="salary">6.000.000 &nbsp; - &nbsp; 8.000.000万円</div>
+                                        <div class="job-description">The candidate in this position will work as
+                                            Principal
+                                            Software Developer with strong… technical…</div>
+                                        <button type="button" class="btn btn-default btn-job-language mr-10"><span
+                                                class="job-language-text">PHP</span></button>
+                                        <button type="button" class="btn btn-default btn-job-language mr-10"><span
+                                                class="job-language-text">Laravel</span></button>
+                                        <button type="button" class="btn btn-default btn-job-language mr-10"><span
+                                                class="job-language-text">AWS</span></button>
+                                        <hr class="jobtitle-hr">
+                                        <span class="job-contact-info">
+                                            <span class="glyphicon glyphicon-home"></span>
+                                            Motivo inc.
+                                            <span class="glyphicon glyphicon-map-marker"></span>
+                                            Shibuya, Tokyo
+                                            <span class="glyphicon glyphicon-time"></span>
+                                            ~10/31
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="carousel-col">
+                                        <span class="glyphicon glyphicon-minus"></span>
+                                        <div class="jobtitle">FullStack Developer</div>
+                                        <div class="salary">6.000.000 &nbsp; - &nbsp; 8.000.000万円</div>
+                                        <div class="job-description">The candidate in this position will work as
+                                            Principal
+                                            Software Developer with strong… technical…</div>
+                                        <button type="button" class="btn btn-default btn-job-language mr-10"><span
+                                                class="job-language-text">PHP</span></button>
+                                        <button type="button" class="btn btn-default btn-job-language mr-10"><span
+                                                class="job-language-text">Laravel</span></button>
+                                        <button type="button" class="btn btn-default btn-job-language mr-10"><span
+                                                class="job-language-text">AWS</span></button>
+                                        <hr class="jobtitle-hr">
+                                        <span class="job-contact-info">
+                                            <span class="glyphicon glyphicon-home"></span>
+                                            Motivo inc.
+                                            <span class="glyphicon glyphicon-map-marker"></span>
+                                            Shibuya, Tokyo
+                                            <span class="glyphicon glyphicon-time"></span>
+                                            ~10/31
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <div class="left carousel-control">
+                                <a href="#carousel" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                            </div>
+                            <div class="right carousel-control">
+                                <a href="#carousel" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="latest-job-hr mr-10">
+                </div>
             </div>
 
             <div class="about-us">
                 <hr class="about-us-top-hr">
                 <div class="about-us-title">Get where you’re going faster with ThalesCode</div>
                 <p class="about-us-description">
-                    If you’re brand new to the world of coding and web development, it makes sense to start by teaching yourself using all the free coding resources online.
+                    If you’re brand new to the world of coding and web development, it makes sense to start by
+                    teaching
+                    yourself using all the free coding resources online.
                     <br>
                     <br>
-                    We offer you a fun and unique way to learn coding. With a fast-learning program we are based on challenges using our internal custom tests. Complete them to earn honor and progress to higher ranks. This is a fun way to learn programming online if you're motivated by a little gamification! At the end of this program you will be able to get in awesome jobs with latest technologies in Tokyo.
+                    We offer you a fun and unique way to learn coding. With a fast-learning program we are based on
+                    challenges using our internal custom tests. Complete them to earn honor and progress to higher
+                    ranks. This is a fun way to learn programming online if you're motivated by a little
+                    gamification!
+                    At the end of this program you will be able to get in awesome jobs with latest technologies in
+                    Tokyo.
                 </p>
                 <div class="about-us-logo">
                 </div>
-                <button type="button" class="btn btn-default about-us-btn"><span class="about-us-btn-text">READ MORE</span></button>
+                <button type="button" class="btn btn-default about-us-btn"><span class="about-us-btn-text">READ
+                        MORE</span></button>
             </div>
             <div class="why-thalescode">
                 <hr class="why-thalescode-top-hr">
@@ -185,7 +275,8 @@
                             <hr class="why-thalescode-well-hr">
                             <div class="why-thalescode-well-title">IT Training</div>
                             <div class="why-thalescode-well-description">
-                                Our team includes people who specialize in IT development and product development services who have the experience and knowledge to understand what our clients need.
+                                Our team includes people who specialize in IT development and product development
+                                services who have the experience and knowledge to understand what our clients need.
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-2 col-xs-12 why-thalescode-grid">
@@ -193,36 +284,44 @@
                             <hr class="why-thalescode-well-hr">
                             <div class="why-thalescode-well-title">Global Recruitment</div>
                             <div class="why-thalescode-well-description">
-                                We focuses on recruit high skilled engineers with knowledge and experience from all around the world, providing qualify candidates who are ready to create innovating solutions for businesses.
+                                We focuses on recruit high skilled engineers with knowledge and experience from all
+                                around the world, providing qualify candidates who are ready to create innovating
+                                solutions for businesses.
                             </div>
                         </div>
-                            
+
                         <div class="col-lg-3 col-md-3 col-sm-2 col-xs-12 why-thalescode-grid">
                             <div class="why-thalescode-well-number">03</div>
                             <hr class="why-thalescode-well-hr">
                             <div class="why-thalescode-well-title">HR - HRBP</div>
                             <div class="why-thalescode-well-description">
-                                    Due to our understanding of technologies, our recruiters not only provide candidates to companies but also consulting on how to structure teams to create a flexible working environment between Japanese and foreigner engineers.
+                                Due to our understanding of technologies, our recruiters not only provide candidates
+                                to
+                                companies but also consulting on how to structure teams to create a flexible working
+                                environment between Japanese and foreigner engineers.
                             </div>
                         </div>
-                        
+
                         <div class="col-lg-3 col-md-3 col-sm-2 col-xs-12 why-thalescode-grid">
                             <div class="why-thalescode-well-number">04</div>
                             <hr class="why-thalescode-well-hr">
                             <div class="why-thalescode-well-title">LifeCare Support</div>
                             <div class="why-thalescode-well-description">
-                                Motivo provides a full relocating package support for candidates who are coming from abroad, taking care from their VISAS support, allocation, life setup and incorporate themselves into the Japanese culture and community. 
+                                Motivo provides a full relocating package support for candidates who are coming from
+                                abroad, taking care from their VISAS support, allocation, life setup and incorporate
+                                themselves into the Japanese culture and community.
                             </div>
                         </div>
-                    </div> 
+                    </div>
                 </div>
                 <div class="why-thalescode-btn">
-                        <button type="button" class="btn btn-default btn-find-more"><span class="btn-find-more-text">FIND MORE</span></button>
+                    <button type="button" class="btn btn-default btn-find-more"><span class="btn-find-more-text">FIND
+                            MORE</span></button>
                 </div>
                 <hr class="why-thalescode-bottom-hr">
-                
+
             </div>
-            
+
             <div class="contact">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-sm-12">
@@ -241,18 +340,24 @@
                     <div class="col-lg-6 col-md-6 col-sm-6 col-sm-12">
                         <div class="form-group">
                             <p id="validation_out" class="validation-result"></p>
-                            <input id="company_name" type="text" class="form-control input-info input-info-font" name="company_name" placeholder="COMPANY NAME">
-                            <input id="first_name" type="text" class="form-control input-info input-info-font" name="first_name" placeholder="FIRST NAME">
+                            <input id="company_name" type="text" class="form-control input-info input-info-font"
+                                name="company_name" placeholder="COMPANY NAME">
+                            <input id="first_name" type="text" class="form-control input-info input-info-font"
+                                name="first_name" placeholder="FIRST NAME">
                             <p id="first_name_out" class="validation-result"></p>
-                            <input id="last_name" type="text" class="form-control input-info input-info-font" name="last_name" placeholder="LAST NAME">
+                            <input id="last_name" type="text" class="form-control input-info input-info-font"
+                                name="last_name" placeholder="LAST NAME">
                             <p id="last_name_out" class="validation-result"></p>
-                            <input id="email" type="text" class="form-control input-info input-info-font" name="email" placeholder="EMAIL">
+                            <input id="email" type="text" class="form-control input-info input-info-font" name="email"
+                                placeholder="EMAIL">
                             <p id="email_out" class="validation-result"></p>
-                            <textarea class="form-control input-info input-info-font" rows="5" id="comment" placeholder="MESSAGE..."></textarea>
-                            <button type="button" id="submit" class="btn input-info input-info-btn input-info-btn-text">SEND</button>
+                            <textarea class="form-control input-info input-info-font" rows="5" id="comment"
+                                placeholder="MESSAGE..."></textarea>
+                            <button type="button" id="submit"
+                                class="btn input-info input-info-btn input-info-btn-text">SEND</button>
                         </div>
                     </div>
-                </div> 
+                </div>
             </div>
 
             <div class="map">
@@ -284,7 +389,8 @@
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                         <div class="page-footer-title">SUBSCRIBE</div>
-                        <input id="subscribe_email" type="text" class="form-control subscribe-font" name="subscribe_email" placeholder="Enter your e-mail">
+                        <input id="subscribe_email" type="text" class="form-control subscribe-font"
+                            name="subscribe_email" placeholder="Enter your e-mail">
                         <div class="copyright-text">© Copyright Thales COde inc 2019</div>
                     </div>
                 </div>
@@ -292,4 +398,5 @@
         </div>
     </div>
 </body>
+
 </html>
