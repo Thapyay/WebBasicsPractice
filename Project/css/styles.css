@@ -154,20 +154,20 @@ body {
 }
 
 .top-btn {
-    width: 25%;
+    padding-top: 10%;
+    width: 70%;
     display: inline-block;
     text-align: center;
-    background: #000000;
 }
 
 .top-btn-developers {
-    width: 25%;
+    width: 30%;
     float: left;
     background: #000000;
 }
 
 .top-btn-companies {
-    width: 25%;
+    width: 30%;
     float: right;
     background: #000000;
 }
@@ -179,8 +179,7 @@ body {
     font-size: 14px;
 
     text-align: center;
-    display: flex;
-    align-items: center;
+    display: inline-block;
     text-transform: uppercase;
 
     color: #FFFFFF;
@@ -226,9 +225,12 @@ body {
     bottom: 77.28%;
 }
 
-.latest-jobs-title {
+.latest-jobs-header {
+    width: 50%;
     float: left;
-    padding-bottom: 5%;
+}
+
+.latest-jobs-title {
     height: 70px;
     font-family: Ubuntu;
     font-style: normal;
@@ -241,7 +243,6 @@ body {
 }
 
 .motivo-job-post {
-    float: left;
     height: 14px;
 
     font-family: Ubuntu;
@@ -261,7 +262,7 @@ body {
 
 .btn-find-more {
     float: right;
-
+    margin-top: 2%;
     mix-blend-mode: normal;
     opacity: 0.3;
     border: 2px solid #000000;
@@ -563,6 +564,11 @@ ol.carousel-indicators li.active {
     bottom: 67.79%;
 }
 
+.about-us-grid {
+    width: 100%;
+    height: 100%;
+}
+
 .about-us-top-hr {
     margin: 0;
     width: 3%;
@@ -571,11 +577,8 @@ ol.carousel-indicators li.active {
 }
 
 .about-us-title {
-    position: absolute;
+    padding-top: 3%;
     height: 227.39px;
-    left: 0%;
-    right: 45.69%;
-    top: 0.5%;
 
     font-family: Ubuntu;
     font-style: normal;
@@ -591,11 +594,7 @@ ol.carousel-indicators li.active {
 }
 
 .about-us-description {
-    position: absolute;
-    left: 0%;
-    right: 51.51%;
-    top: 35%;
-    bottom: 69.08%;
+    padding-top: 5%;
 
     font-family: Ubuntu;
     font-style: normal;
@@ -611,16 +610,8 @@ ol.carousel-indicators li.active {
     opacity: 0.6;
 }
 
-.about-us-logo {
-    position: absolute;
-    right: 0%;
-    top: 5%;
-}
-
 .about-us-btn {
-    position: absolute;
-    left: 0%;
-    bottom: 0%;
+    margin-top: 15%;
 
     mix-blend-mode: normal;
     opacity: 0.3;
@@ -643,6 +634,73 @@ ol.carousel-indicators li.active {
     color: #000000;
 }
 
+.about-us-right {
+    width: 100%;
+    height: 100%;
+}
+
+.about-us-logo-TC {
+    position: absolute;
+    top: 35%;
+    width: 30%;
+    left: 15%;
+    ;
+}
+
+.about-us-logo-T {
+    transform: rotate(30deg);
+    font-family: Vampiro One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 144px;
+    line-height: 70px;
+    /* identical to box height, or 49% */
+
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.about-us-logo-C {
+    transform: rotate(45deg);
+    font-family: Vampiro One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 144px;
+    line-height: 70px;
+    /* identical to box height, or 49% */
+
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    color: #2CA1F8;
+
+}
+
+.about-us-logo-text {
+    position: absolute;
+    top: 25%;
+    right: 10%;
+    width: 50%;
+    height: 50%;
+    ;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 70px;
+    /* or 140% */
+
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
 .why-thalescode {
     position: absolute;
     left: 0%;
@@ -651,37 +709,37 @@ ol.carousel-indicators li.active {
     bottom: 55.14%;
 }
 
-.why-thalescode-triangle1{
+.why-thalescode-triangle1 {
     position: absolute;
     left: -25.94%;
     right: 81.97%;
     top: 35.02%;
     bottom: 51.84%;
-    
+
     background: #8296AF;
     mix-blend-mode: normal;
     opacity: 0.1;
     transform: rotate(-45deg);
 }
 
-.why-thalescode-triangle2{
-left: 73.69%;
-right: -6.35%;
-top: 37.11%;
-bottom: 55.38%;
+.why-thalescode-triangle2 {
+    left: 73.69%;
+    right: -6.35%;
+    top: 37.11%;
+    bottom: 55.38%;
 
-background: #8296AF;
-mix-blend-mode: normal;
-opacity: 0.1;
-transform: rotate(-6deg);
+    background: #8296AF;
+    mix-blend-mode: normal;
+    opacity: 0.1;
+    transform: rotate(-6deg);
 }
 
-.why-thalescode-triangle3{
+.why-thalescode-triangle3 {
     left: 102.17%;
     right: -42.05%;
     top: 34.07%;
     bottom: 56.76%;
-    
+
     background: #8296AF;
     mix-blend-mode: normal;
     opacity: 0.1;
@@ -689,7 +747,6 @@ transform: rotate(-6deg);
 }
 
 .why-thalescode-top-hr {
-    position: absolute;
     width: 95%;
     margin-left: 2.5%;
     mix-blend-mode: normal;
@@ -697,12 +754,25 @@ transform: rotate(-6deg);
     border: 1px solid #979797;
 }
 
+/* Modifying from this part !!!!!!!!!!!!!!!1 */
+.why-thalescode-header{
+    width: 100%;
+    height: 30%;
+}
+
 .why-thalescode-title1 {
-    position: absolute;
-    height: 70px;
-    left: 28.75%;
-    right: 23.31%;
-    top: 10%;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 90px;
+    /* or 180% */
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #2B3247;
 }
 
 .why-thalescode-title2 {
