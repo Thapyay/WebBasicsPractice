@@ -711,10 +711,10 @@ ol.carousel-indicators li.active {
 
 .why-thalescode-triangle1 {
     position: absolute;
-    left: -25.94%;
-    right: 81.97%;
-    top: 35.02%;
-    bottom: 51.84%;
+    left: -20%;
+    top: 37%;
+    width: 30%;
+    height: 350px;
 
     background: #8296AF;
     mix-blend-mode: normal;
@@ -723,27 +723,16 @@ ol.carousel-indicators li.active {
 }
 
 .why-thalescode-triangle2 {
-    left: 73.69%;
-    right: -6.35%;
-    top: 37.11%;
-    bottom: 55.38%;
+    position: absolute;
+    left: 78.69%;
+    top: 35%;
+    width: 400px;
+    height: 350px;
 
     background: #8296AF;
     mix-blend-mode: normal;
     opacity: 0.1;
     transform: rotate(-6deg);
-}
-
-.why-thalescode-triangle3 {
-    left: 102.17%;
-    right: -42.05%;
-    top: 34.07%;
-    bottom: 56.76%;
-
-    background: #8296AF;
-    mix-blend-mode: normal;
-    opacity: 0.1;
-    transform: rotate(55deg);
 }
 
 .why-thalescode-top-hr {
@@ -754,13 +743,20 @@ ol.carousel-indicators li.active {
     border: 1px solid #979797;
 }
 
-/* Modifying from this part !!!!!!!!!!!!!!!1 */
 .why-thalescode-header{
     width: 100%;
     height: 30%;
 }
 
 .why-thalescode-title1 {
+    position: absolute;
+    width: 40%;
+    height: 90px;
+    left: 30%;
+    top: 8%;
+}
+
+.why-thalescode-title1-why{
     font-family: Ubuntu;
     font-style: normal;
     font-weight: bold;
@@ -896,7 +892,8 @@ ol.carousel-indicators li.active {
 }
 
 .why-thalescode-btn {
-    top: 90%;
+    position: absolute;
+    top: 80%;
     bottom: 5%;
     left: 5%;
     right: 5%;
@@ -918,7 +915,6 @@ ol.carousel-indicators li.active {
     bottom: 25.5%;
     left: 7%;
     right: 7%;
-    background-color: blue;
 }
 
 .contact {
@@ -1027,10 +1023,6 @@ ol.carousel-indicators li.active {
     bottom: 6.6%;
     left: 5%;
     right: 5%;
-
-    background-image: url(../img/Map.png);
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
 .page-footer {
@@ -1053,7 +1045,7 @@ ol.carousel-indicators li.active {
 .page-footer-title {
     font-family: Ubuntu;
     font-style: normal;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.84px;
@@ -1063,6 +1055,7 @@ ol.carousel-indicators li.active {
 
 .page-footer-list {
     padding: 0;
+    margin-top: 10px;
     list-style-type: none;
 }
 
@@ -1080,6 +1073,7 @@ ol.carousel-indicators li.active {
 }
 
 .subscribe-font {
+    margin-top: 5%;
     mix-blend-mode: normal;
     opacity: 0.2;
     border: 1px solid #000000;
@@ -1098,6 +1092,7 @@ ol.carousel-indicators li.active {
 }
 
 .copyright-text {
+    margin-top: 20%; 
     font-family: Ubuntu;
     font-style: normal;
     font-weight: 300;
